@@ -9,13 +9,13 @@ This is a simple Python tool that helps clean up old backup files while preservi
 
 ## 📂 Versions
 
-### 🟢 v1 - Config File Based ([`v1-config-file/`](./v1-config-file)) - December 2019
+### 🟢 v1 - Config File Based ([`v1-config-file/`](./v1)) - December 2019
 - Reads configuration from a `config.ini` file.
 - Suitable for converting to a `.exe` file (e.g., using PyInstaller).
 - Simple for non-technical users or for static configurations — just double-click to run.
 
 
-### ⚙️ v2 - Command-Line Version ([`v2-cli-version/`](./v2-cli-version)) - January 2020
+### ⚙️ v2 - Command-Line Version ([`v2-cli-version/`](./v2)) - January 2020
 - Accepts arguments directly from the terminal (using `argparse`).
 - More flexible and better suited for automation, cron jobs, or CI/CD tasks.
 - No config file needed — you provide everything at runtime.
