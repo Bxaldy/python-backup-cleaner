@@ -14,12 +14,27 @@ This is a simple Python tool that helps clean up old backup files while preservi
 - Suitable for converting to a `.exe` file (e.g., using PyInstaller).
 - Simple for non-technical users or for static configurations — just double-click to run.
 
+
 ### ⚙️ v2 - Command-Line Version ([`v2-cli-version/`](./v2-cli-version)) - January 2020
 - Accepts arguments directly from the terminal (using `argparse`).
 - More flexible and better suited for automation, cron jobs, or CI/CD tasks.
 - No config file needed — you provide everything at runtime.
 
 ---
+
+🧯 Safety Notes
+Whether you use the config.ini version or the CLI version:
+
+Always double-check paths, days, and exception months before execution.
+
+Be aware that:
+
+If exceptionMonth1/2 are missing (in config file), the script will crash.
+
+If exceptionMonth1/2 = 0, or invalid months are used (like 0 or >12), the script will not exclude any files, potentially deleting everything older than the given threshold.
+
+If --days is set to 0, the script will treat all files (except excluded months) as ready to delete.
+
 
 ## 🔧 What It Does
 
